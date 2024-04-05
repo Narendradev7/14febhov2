@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+<style>
+
+   .div1{
+        display: block;
+        justify-content: center;
+    }
+
+    .div3{
+        display: grid;
+        /* grid-template-columns: 30px 30px 30px; */
+        gap: 100px;
+        background-color: bisque;
+        width: 300px;
+        margin: 50px;
+    }
+
+    img{
+        display: none;
+        visibility: hidden;
+    }
+
+    .div1:active+img{
+        display: inline-block;
+        visibility: visible;
+    }
+
+    .div4:active+img{
+        display: inline;
+        visibility: visible;
+    }
+
+    .div6:active~img{
+        display: inline;
+        visibility: visible;
+    }
+
+</style>
+</head>
+<body>
+    <div class="div3">
+   
+    <div class="div1" style="border: 2px solid; width: 25px;">
+    
+        <div class="div2" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div2" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div2" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+    
+    </div>
+
+    <img src="../Images/cute-baby-animals-1558535060.jpg" height="100px" width="100px">
+
+    <div class="div4" style="border: 2px solid; width: 25px;">
+    
+        <div class="div5" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div5" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div5" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+    
+    </div>
+
+    <img src="../Images/pexels-photo-1661179.jpeg" height="100px" width="100px">
+
+    <div class="div6" style="border: 2px solid; width: 25px;">
+    
+        <div class="div7" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div7" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+        <div class="div7" style="width: 10px; border: 2px solid; margin: 5px;"></div>
+    
+    </div>
+    <img src="../Images/pexels-photo-11760851.jpeg" height="100px" width="100px">
+
+   </div>
+</body>
+</html>
